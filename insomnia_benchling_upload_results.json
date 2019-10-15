@@ -1,0 +1,260 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2019-10-15T18:14:02.120Z",
+    "__export_source": "insomnia.desktop.app:v7.0.0",
+    "resources": [
+        {
+            "_id": "req_9dd6246cd07c4fe8ac524e52bc14a09b",
+            "authentication": {
+                "disabled": false,
+                "password": "",
+                "type": "basic",
+                "username": "{{api_key}}"
+            },
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"assayResults\": [\n\t\t{\n\t\t\t\"schemaId\": null,\n\t\t\t\"fields\": {\n\t\t\t\t\"lc_run\": null,\n\t\t\t\t\"plate\": null,\n\t\t\t\t\"well\": null,\n\t\t\t\t\"lot_number\": null,\n\t\t\t\t\"titer\": null,\n\t\t\t\t\"submission_date\": null,\n\t\t\t\t\"chromatogram_file\": null,\n\t\t\t\t\"sample\": null\n\t\t\t}\n\t\t}\n\t]\n}\n"
+            },
+            "created": 1571113732316,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_ff0cc2ba2dc74a4db6e630f2e8e328e7",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1570750823832,
+            "method": "POST",
+            "modified": 1571117424623,
+            "name": "Fill me in: Create Results",
+            "parameters": [],
+            "parentId": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{base_url}}/assay-results",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "created": 1571113732308,
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": {},
+            "metaSortKey": -1567897679790,
+            "modified": 1571113963979,
+            "name": "Benchling Example: Creating Results",
+            "parentId": "wrk_679ffe298c854d798daa407c209e4b6a",
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_679ffe298c854d798daa407c209e4b6a",
+            "created": 1571113732275,
+            "description": "",
+            "modified": 1571113759233,
+            "name": "Benchling",
+            "parentId": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_803e4418565d4d61a73c1af0a1781990",
+            "authentication": {
+                "disabled": false,
+                "password": "",
+                "type": "basic",
+                "username": "{{api_key}}"
+            },
+            "body": {},
+            "created": 1571113732313,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1570750823825.75,
+            "method": "GET",
+            "modified": 1571113732313,
+            "name": "List Assay Schemas",
+            "parameters": [],
+            "parentId": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{base_url}}/assay-schemas",
+            "_type": "request"
+        },
+        {
+            "_id": "req_93f596caeb534c67a7f2c209c03684f9",
+            "authentication": {
+                "disabled": false,
+                "password": "",
+                "type": "basic",
+                "username": "{{api_key}}"
+            },
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"assayRuns\": [\n\t\t{\n\t\t\t\"schemaId\": null,\n\t\t\t\"fields\": {\n\t\t\t\t\"submitter\": null\n\t\t\t}\n\t\t}\n\t]\n}"
+            },
+            "created": 1571113732310,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_504e20dbeba3495da9ddfa09fcbc9657",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1570750823819.5,
+            "method": "POST",
+            "modified": 1571117481280,
+            "name": "Fill me in: Create Runs",
+            "parameters": [
+                {
+                    "id": "pair_b56eda89b4494a568c145ac9404e0d5a",
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "parentId": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{base_url}}/assay-runs",
+            "_type": "request"
+        },
+        {
+            "_id": "req_98d981b4581440beb66a5b45813b15b2",
+            "authentication": {
+                "disabled": false,
+                "password": "",
+                "type": "basic",
+                "username": "{{api_key}}"
+            },
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"chromatogram_file_example.png\",\n\t\"type\": \"VISUALIZATION\",\n\t\"md5\": \"a499d219812b189a1b6e4dc76a446cf3\",\n\t\"data64\": \"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\"\n}"
+            },
+            "created": 1571113732312,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_9df8a403adcb4ea0a15e9570fc2396ac",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1570750823813.25,
+            "method": "POST",
+            "modified": 1571115530248,
+            "name": "Create Blob",
+            "parameters": [],
+            "parentId": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{base_url}}/blobs",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f1b05f5037cd47ee98dc14f2cdcaa4d3",
+            "authentication": {
+                "disabled": false,
+                "password": "",
+                "type": "basic",
+                "username": "{{api_key}}"
+            },
+            "body": {},
+            "created": 1571113732309,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1570750823810.125,
+            "method": "GET",
+            "modified": 1571115811489,
+            "name": "List Registries",
+            "parameters": [],
+            "parentId": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{base_url}}/registries",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1159f5506d1c4d668d70b402266f76d7",
+            "authentication": {
+                "disabled": false,
+                "password": "",
+                "type": "basic",
+                "username": "{{api_key}}"
+            },
+            "body": {},
+            "created": 1571113732317,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1570750823807,
+            "method": "GET",
+            "modified": 1571117026810,
+            "name": "Fill me in: BulkGet Registered Entities",
+            "parameters": [
+                {
+                    "id": "pair_ef9055d9ee79410a92fbdf11019219ec",
+                    "name": "entityRegistryIds",
+                    "value": "SUP001"
+                }
+            ],
+            "parentId": "fld_bd6c68bf546f4be0b7e6358c4dc483b2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{base_url}}/registries/<registry_id>/registered-entities:bulk-get",
+            "_type": "request"
+        },
+        {
+            "_id": "env_59f1cd045e1e48029c29e0571405b8fb",
+            "color": null,
+            "created": 1571113732279,
+            "data": {
+                "api_key": "",
+                "base_url": ""
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "api_key",
+                    "base_url"
+                ]
+            },
+            "isPrivate": false,
+            "metaSortKey": 1567536098552,
+            "modified": 1571114687310,
+            "name": "Base Environment",
+            "parentId": "wrk_679ffe298c854d798daa407c209e4b6a",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_44ab9031f9b0e243651f39fce2d2701e7b71993e",
+            "cookies": [],
+            "created": 1571163228290,
+            "modified": 1571163228290,
+            "name": "Default Jar",
+            "parentId": "wrk_679ffe298c854d798daa407c209e4b6a",
+            "_type": "cookie_jar"
+        }
+    ]
+}
